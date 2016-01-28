@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 Database list
+  ul
+    each database in databases
+      li
+        a(href='/#{database.name}')= database.name
